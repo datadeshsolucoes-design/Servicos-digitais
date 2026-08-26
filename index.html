@@ -166,6 +166,13 @@
             flex-shrink: 0;
             box-shadow: 0 4px 16px rgba(15, 118, 110, 0.15);
             transition: transform 0.3s ease;
+            background: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 900;
+            font-size: 18px;
         }
 
         .brand-mark img {
@@ -1533,8 +1540,8 @@
             <div class="nav-wrap">
                 <a href="#" class="brand">
                     <div class="brand-mark">
-                        <!-- Link da logo atualizado para o repositório correto -->
-                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/logo.png" alt="DataDesh Soluções Logo">
+                        <!-- Logo - usando iniciais DS caso não tenha imagem da logo -->
+                        <span style="font-size:20px; font-weight:900;">DS</span>
                     </div>
                     <div class="brand-text">
                         <strong>DataDesh Soluções</strong>
@@ -1551,7 +1558,6 @@
                 </ul>
                 <div class="nav-actions">
                     <a class="nav-icon-link desktop-only" href="https://www.instagram.com/datadeshsolucoesdigitais/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <!-- Link do Catálogo atualizado -->
                     <a class="btn btn-catalogo desktop-only" href="https://datadeshsolucoes-design.github.io/catalago-sem-precos-DataDesh/" target="_blank"><i class="fa-solid fa-book"></i> Catálogo de Serviços DataDesh</a>
                     <a class="btn btn-primary desktop-only btn-glow" href="https://wa.me/5531984987116" target="_blank"><i class="fab fa-whatsapp"></i> Fale comigo</a>
                     <button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
@@ -1595,7 +1601,6 @@
 
                     <div class="hero-actions reveal">
                         <a href="https://wa.me/5531984987116" class="btn btn-primary btn-glow" target="_blank"><i class="fab fa-whatsapp"></i> Quero minha solução</a>
-                        <!-- Link do Catálogo atualizado -->
                         <a href="https://datadeshsolucoes-design.github.io/catalago-sem-precos-DataDesh/" class="btn btn-catalogo" target="_blank"><i class="fa-solid fa-book"></i> Ver Catálogo</a>
                         <a href="#projetos" class="btn btn-secondary"><i class="fa-regular fa-eye"></i> Ver projetos</a>
                     </div>
@@ -1617,7 +1622,6 @@
                 </div>
 
                 <div class="hero-avatar reveal-tilt">
-                    <!-- Foto de perfil atualizada com URL raw -->
                     <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/foto%20(1).jpg" alt="Ana Paula">
                 </div>
             </div>
@@ -1657,7 +1661,6 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-photo-card reveal-tilt">
-                    <!-- Foto de perfil atualizada com URL raw -->
                     <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/foto%20(1).jpg" alt="Ana Paula">
                 </div>
                 <div class="about-copy reveal">
@@ -1761,7 +1764,6 @@
                 <!-- Portfólio -->
                 <div class="project-card reveal-tilt">
                     <div class="project-media">
-                        <!-- Link da imagem atualizado para o repositório Servicos-digitais -->
                         <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/portifolio.png" alt="Portfólio Profissional">
                     </div>
                     <div class="project-content">
@@ -1778,7 +1780,6 @@
                 <!-- Currículo -->
                 <div class="project-card reveal-tilt">
                     <div class="project-media">
-                        <!-- Link da imagem atualizado -->
                         <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/curriculo.png" alt="Currículo Interativo">
                     </div>
                     <div class="project-content">
@@ -1795,8 +1796,7 @@
                 <!-- Painel no Google Sheets -->
                 <div class="project-card reveal-tilt">
                     <div class="project-media">
-                        <!-- Link da imagem atualizado -->
-                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/Pain%C3%A9l%20Interativo%20com%20Google%20Shetts.png" alt="Painel no Google Sheets">
+                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/Googleshetes.png" alt="Painel no Google Sheets">
                     </div>
                     <div class="project-content">
                         <h3>Painel no Google Sheets</h3>
@@ -1809,10 +1809,25 @@
                     </div>
                 </div>
 
+                <!-- Dashboard OCI -->
+                <div class="project-card reveal-tilt">
+                    <div class="project-media">
+                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/deshbord.png" alt="Dashboard OCI">
+                    </div>
+                    <div class="project-content">
+                        <h3>Dashboard OCI</h3>
+                        <p>Painel interativo com gráficos e filtros para análise de dados.</p>
+                        <a href="https://datadeshsolucoes-design.github.io/Painel-OCI/" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="project-tags">
+                            <span>Chart.js</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Organização de Links -->
                 <div class="project-card reveal-tilt">
                     <div class="project-media">
-                        <!-- Link da imagem atualizado -->
                         <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/pagina%20de%20links.png" alt="Página de Links">
                     </div>
                     <div class="project-content">
@@ -1829,7 +1844,6 @@
                 <!-- Contatos Telefônicos -->
                 <div class="project-card reveal-tilt">
                     <div class="project-media">
-                        <!-- Link da imagem atualizado -->
                         <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/organiza%C3%A7%C3%A3o%20de%20contatos%20telefonicos.png" alt="Organização de Contatos">
                     </div>
                     <div class="project-content">
@@ -1843,19 +1857,49 @@
                     </div>
                 </div>
 
-                <!-- Dashboard Interativo -->
+                <!-- Painel IBGE -->
                 <div class="project-card reveal-tilt">
                     <div class="project-media">
-                        <!-- Link da imagem atualizado -->
-                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/servicosdigitais/main/filtros%20com%20graficos%20interativos.png" alt="Dashboard Interativo">
+                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/painelibge.png" alt="Painel IBGE - Censo Distrito Eldorado">
                     </div>
                     <div class="project-content">
-                        <h3>Dashboard Interativo</h3>
-                        <p>Painel com gráficos interativos e filtros dinâmicos.</p>
-                        <!-- Adicione um link se tiver, senão remova ou deixe comentado -->
-                        <!-- <a href="#" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a> -->
+                        <h3>Painel IBGE - Censo</h3>
+                        <p>Visualização interativa dos dados do censo do Distrito Eldorado.</p>
+                        <a href="https://anadesenvolvedora.github.io/painelcensoibgedistritoeldorado/" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
                         <div class="project-tags">
-                            <span>Chart.js</span>
+                            <span>D3.js</span>
+                            <span>IBGE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resumo dos Fluxos -->
+                <div class="project-card reveal-tilt">
+                    <div class="project-media">
+                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/resumo%20dos%20fluxos.png" alt="Resumo dos Fluxos - Regulação">
+                    </div>
+                    <div class="project-content">
+                        <h3>Resumo dos Fluxos</h3>
+                        <p>Página para acompanhamento e resumo dos fluxos de regulação.</p>
+                        <a href="https://anadesenvolvedora.github.io/saudepaginafluxodaregula-o/" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="project-tags">
+                            <span>HTML/CSS</span>
+                            <span>Dashboard</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sites Modernos / Clínicas -->
+                <div class="project-card reveal-tilt">
+                    <div class="project-media">
+                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/site%20modernos.png" alt="Site Moderno para Clínicas">
+                    </div>
+                    <div class="project-content">
+                        <h3>Site Moderno para Clínicas</h3>
+                        <p>Layout contemporâneo e responsivo para clínicas e consultórios.</p>
+                        <a href="https://anadesenvolvedora.github.io/prototipositeclinica/#depoimentos" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="project-tags">
+                            <span>HTML/CSS</span>
                             <span>JavaScript</span>
                         </div>
                     </div>
@@ -1892,7 +1936,6 @@
                     <p>Até 50 produtos • Busca por nome • WhatsApp integrado</p>
                     <div style="display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap;">
                         <a href="https://wa.me/5531984987116?text=Quero%20um%20cat%C3%A1logo%20digital!" class="btn btn-primary" target="_blank">Quero meu catálogo</a>
-                        <!-- Link do Catálogo atualizado -->
                         <a href="https://datadeshsolucoes-design.github.io/catalago-sem-precos-DataDesh/" class="btn btn-secondary" target="_blank">Ver demo</a>
                     </div>
                 </div>
@@ -1907,7 +1950,6 @@
                     <h3>Conheça meu <span style="color: var(--primary);">catálogo de soluções</span></h3>
                     <p>Mais de 112 soluções digitais disponíveis — sites, catálogos, dashboards, automações e micro-sistemas para pequenos negócios.</p>
                     <div class="btn-group">
-                        <!-- Link do Catálogo atualizado -->
                         <a href="https://datadeshsolucoes-design.github.io/catalago-sem-precos-DataDesh/" class="btn btn-catalogo" target="_blank">
                             <i class="fa-solid fa-book"></i> Ver Catálogo Completo
                         </a>
@@ -1932,13 +1974,17 @@
                     </div>
                     <h3>Página profissional para <span>clínicas e consultórios</span></h3>
                     <p>Estrutura completa para apresentar serviços, diferenciais, equipe e contato. Visual moderno que transmite credibilidade ao paciente.</p>
+                    <div style="margin-top: 16px;">
+                        <a href="https://anadesenvolvedora.github.io/prototipositeclinica/#depoimentos" target="_blank" class="btn btn-secondary" style="display: inline-flex;">
+                            <i class="fa-regular fa-eye"></i> Ver exemplo
+                        </a>
+                    </div>
                 </div>
                 <div class="clinic-pricing">
                     <h3>Solução completa</h3>
                     <p>Apresentação profissional com layout exclusivo</p>
                     <div class="btn-group">
                         <a href="https://wa.me/5531984987116?text=Quero%20uma%20p%C3%A1gina%20para%20minha%20cl%C3%ADnica!" class="btn btn-primary" target="_blank"><i class="fab fa-whatsapp"></i> Quero a minha</a>
-                        <!-- Link do Catálogo atualizado -->
                         <a href="https://datadeshsolucoes-design.github.io/catalago-sem-precos-DataDesh/" class="btn btn-secondary" target="_blank">Ver exemplos</a>
                     </div>
                 </div>
@@ -1990,7 +2036,6 @@
             <p>Vamos conversar sobre como posso ajudar sua empresa a ter uma presença digital profissional.</p>
             <div class="btn-group">
                 <a href="https://wa.me/5531984987116" class="btn btn-primary btn-glow" target="_blank"><i class="fab fa-whatsapp"></i> Falar com Ana</a>
-                <!-- Link do Catálogo atualizado -->
                 <a href="https://datadeshsolucoes-design.github.io/catalago-sem-precos-DataDesh/" class="btn btn-catalogo" target="_blank"><i class="fa-solid fa-book"></i> Ver Catálogo</a>
                 <a href="#projetos" class="btn btn-secondary"><i class="fa-regular fa-eye"></i> Ver projetos</a>
             </div>
@@ -2006,6 +2051,9 @@
                 <div class="footer-brand">
                     <h4>DataDesh Soluções</h4>
                     <p>Soluções digitais personalizadas para pequenos negócios.</p>
+                    <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 8px;">
+                        <strong>CNPJ:</strong> 66.884.261/0001-20
+                    </p>
                 </div>
                 <div class="footer-links">
                     <h4>Links rápidos</h4>
@@ -2014,7 +2062,6 @@
                     <a href="#projetos">Projetos</a>
                     <a href="#catalogos">Catálogos</a>
                     <a href="#clinicas">Clínicas</a>
-                    <!-- Link do Catálogo atualizado -->
                     <a href="https://datadeshsolucoes-design.github.io/catalago-sem-precos-DataDesh/" target="_blank">Catálogo Completo</a>
                 </div>
                 <div class="footer-contact">
@@ -2031,7 +2078,7 @@
                     <a href="https://wa.me/5531984987116" target="_blank"><i class="fab fa-whatsapp"></i></a>
                     <a href="mailto:datadshsolucoes@gmail.com"><i class="fa-regular fa-envelope"></i></a>
                 </div>
-                <p>© 2025 DataDesh Soluções - Ana | Todos os direitos reservados</p>
+                <p>© 2026 DataDesh Soluções - Ana | CNPJ: 66.884.261/0001-20 | Todos os direitos reservados</p>
             </div>
         </div>
     </footer>
@@ -2112,7 +2159,6 @@
         resizeCanvas();
         window.addEventListener('resize', resizeCanvas);
 
-        // Captura a posição do mouse para interação
         window.addEventListener('mousemove', (e) => {
             mouse.x = e.clientX;
             mouse.y = e.clientY;
@@ -2131,13 +2177,12 @@
                 this.baseSize = this.size;
                 this.speedX = (Math.random() - 0.5) * 0.6;
                 this.speedY = (Math.random() - 0.5) * 0.6;
-                // Cores suaves para o modo claro
                 const colors = [
-                    '15, 118, 110',   // verde principal
-                    '124, 58, 237',   // roxo
-                    '245, 158, 11',   // dourado
-                    '14, 165, 233',   // azul
-                    '236, 72, 153',   // rosa
+                    '15, 118, 110',
+                    '124, 58, 237',
+                    '245, 158, 11',
+                    '14, 165, 233',
+                    '236, 72, 153',
                 ];
                 this.color = colors[Math.floor(Math.random() * colors.length)];
                 this.opacity = Math.random() * 0.3 + 0.15;
@@ -2163,10 +2208,8 @@
                     if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
                 }
 
-                // Efeito de pulsação
                 this.size = this.baseSize + Math.sin(Date.now() * this.pulseSpeed + this.pulseOffset) * 0.8;
 
-                // Interação com o mouse (aproximação)
                 if (mouse.x !== null) {
                     const dx = mouse.x - this.x;
                     const dy = mouse.y - this.y;
@@ -2188,7 +2231,6 @@
                 ctx.fillStyle = `rgba(${this.color}, ${this.opacity})`;
                 ctx.fill();
 
-                // Brilho sutil
                 if (this.size > 3) {
                     ctx.beginPath();
                     ctx.arc(this.x - this.size * 0.2, this.y - this.size * 0.2, this.size * 0.3, 0, Math.PI * 2);
@@ -2227,13 +2269,8 @@
 
         function animateParticles() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            
-            // Desenha as conexões primeiro (ficam atrás)
             connectParticles();
-            
-            // Depois desenha as partículas
             particles.forEach(p => { p.update(); p.draw(); });
-            
             animId = requestAnimationFrame(animateParticles);
         }
         animateParticles();
