@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DataDesh Soluções | Sites, Catálogos e Soluções Digitais</title>
-    <meta name="description" content="Soluções digitais para pequenos negócios: sites, catálogos, páginas e dashboards. Atendimento personalizado e foco em resultados." />
+    <title>DataDesh Soluções | Sites, Catálogos e Soluções Digitais para Gestão Pública e Negócios</title>
+    <meta name="description" content="Soluções digitais sob medida para prefeituras e empresas: sites, catálogos, dashboards e ferramentas de gestão. Atendimento personalizado e foco em resultados." />
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -38,9 +38,7 @@
             --container: 1200px;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
 
         body {
             font-family: 'Inter', sans-serif;
@@ -50,16 +48,9 @@
             overflow-x: hidden;
         }
 
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: var(--bg);
-        }
-        ::-webkit-scrollbar-thumb {
-            background: var(--primary);
-            border-radius: 10px;
-        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg); }
+        ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 10px; }
 
         .container {
             width: min(100% - 32px, var(--container));
@@ -85,11 +76,6 @@
             50% { box-shadow: 0 0 80px rgba(15, 118, 110, 0.10); }
         }
 
-        @keyframes tiltIn {
-            0% { opacity: 0; transform: perspective(800px) rotateX(-15deg) rotateY(15deg) translateY(40px); }
-            100% { opacity: 1; transform: perspective(800px) rotateX(0deg) rotateY(0deg) translateY(0); }
-        }
-
         .reveal {
             opacity: 0;
             transform: translateY(30px);
@@ -113,7 +99,7 @@
         }
 
         /* ============================================================
-           PARTICLES - EFEITO BOLINHAS FLUTUANTES (MODO CLARO)
+           PARTICLES
            ============================================================ */
         #particles-canvas {
             position: fixed;
@@ -126,7 +112,7 @@
         }
 
         /* ============================================================
-           HEADER - MODO CLARO
+           HEADER
            ============================================================ */
         .navbar {
             position: sticky;
@@ -175,33 +161,12 @@
             font-size: 18px;
         }
 
-        .brand-mark img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+        .brand-mark img { width: 100%; height: 100%; object-fit: cover; }
+        .brand-mark:hover { transform: rotate(-8deg) scale(1.05); }
 
-        .brand-mark:hover {
-            transform: rotate(-8deg) scale(1.05);
-        }
-
-        .brand-text {
-            display: flex;
-            flex-direction: column;
-            line-height: 1.05;
-        }
-
-        .brand-text strong {
-            font-size: 1rem;
-            color: var(--text);
-            letter-spacing: -0.02em;
-        }
-
-        .brand-text span {
-            font-size: 0.7rem;
-            color: var(--text-light);
-            font-weight: 500;
-        }
+        .brand-text { display: flex; flex-direction: column; line-height: 1.05; }
+        .brand-text strong { font-size: 1rem; color: var(--text); letter-spacing: -0.02em; }
+        .brand-text span { font-size: 0.7rem; color: var(--text-light); font-weight: 500; }
 
         .nav-links {
             display: flex;
@@ -230,27 +195,12 @@
             transition: width 0.3s ease;
         }
 
-        .nav-links a:hover {
-            color: var(--text);
-        }
+        .nav-links a:hover { color: var(--text); }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-links a.active { color: var(--primary); }
+        .nav-links a.active::after { width: 100%; }
 
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        .nav-links a.active {
-            color: var(--primary);
-        }
-
-        .nav-links a.active::after {
-            width: 100%;
-        }
-
-        .nav-actions {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
+        .nav-actions { display: flex; align-items: center; gap: 12px; }
 
         .btn {
             display: inline-flex;
@@ -293,17 +243,6 @@
             border-color: var(--primary);
         }
 
-        .btn-accent {
-            background: linear-gradient(135deg, var(--accent), #d97706);
-            color: white;
-            box-shadow: 0 4px 24px rgba(245, 158, 11, 0.15);
-        }
-
-        .btn-accent:hover {
-            transform: translateY(-3px) scale(1.02);
-            box-shadow: 0 12px 40px rgba(245, 158, 11, 0.25);
-        }
-
         .btn-catalogo {
             background: linear-gradient(135deg, var(--secondary), #6d28d9);
             color: white;
@@ -315,9 +254,7 @@
             box-shadow: 0 12px 40px rgba(124, 58, 237, 0.25);
         }
 
-        .btn-glow {
-            animation: glowPulse 3s ease-in-out infinite;
-        }
+        .btn-glow { animation: glowPulse 3s ease-in-out infinite; }
 
         .nav-icon-link {
             width: 42px;
@@ -357,9 +294,7 @@
             gap: 8px;
         }
 
-        .nav-mobile.active {
-            display: flex;
-        }
+        .nav-mobile.active { display: flex; }
 
         .nav-mobile a {
             padding: 14px 16px;
@@ -379,7 +314,7 @@
         }
 
         /* ============================================================
-           HERO - MODO CLARO
+           HERO
            ============================================================ */
         .hero {
             padding: 80px 0 60px;
@@ -478,10 +413,7 @@
             box-shadow: 0 8px 24px rgba(15, 118, 110, 0.05);
         }
 
-        .hero-tag i {
-            color: var(--primary);
-            margin-right: 0.3rem;
-        }
+        .hero-tag i { color: var(--primary); margin-right: 0.3rem; }
 
         .hero-actions {
             display: flex;
@@ -525,9 +457,7 @@
             transition: transform 0.6s ease;
         }
 
-        .hero-avatar:hover {
-            transform: rotateY(5deg) rotateX(5deg) scale(1.02);
-        }
+        .hero-avatar:hover { transform: rotateY(5deg) rotateX(5deg) scale(1.02); }
 
         .hero-avatar::after {
             content: '';
@@ -540,14 +470,10 @@
             animation: glowPulse 4s ease-in-out infinite;
         }
 
-        .hero-avatar img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+        .hero-avatar img { width: 100%; height: 100%; object-fit: cover; }
 
         /* ============================================================
-           TRUST BAR - MODO CLARO
+           TRUST BAR
            ============================================================ */
         .trust-bar {
             margin-top: -18px;
@@ -585,28 +511,14 @@
             flex-shrink: 0;
         }
 
-        .trust-item div strong {
-            display: block;
-            font-size: 0.95rem;
-            color: var(--text);
-        }
-
-        .trust-item div span {
-            font-size: 0.8rem;
-            color: var(--text-light);
-        }
+        .trust-item div strong { display: block; font-size: 0.95rem; color: var(--text); }
+        .trust-item div span { font-size: 0.8rem; color: var(--text-light); }
 
         /* ============================================================
-           SEÇÕES - MODO CLARO
+           SEÇÕES
            ============================================================ */
-        .section {
-            padding: 90px 0;
-            position: relative;
-        }
-
-        .section-alt {
-            background: rgba(255, 255, 255, 0.5);
-        }
+        .section { padding: 90px 0; position: relative; }
+        .section-alt { background: rgba(255, 255, 255, 0.5); }
 
         .section-header {
             max-width: 760px;
@@ -654,7 +566,7 @@
         }
 
         /* ============================================================
-           SOBRE - MODO CLARO
+           SOBRE
            ============================================================ */
         .about-grid {
             display: grid;
@@ -679,11 +591,7 @@
             box-shadow: var(--shadow-glow);
         }
 
-        .about-photo-card img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
+        .about-photo-card img { width: 100%; height: auto; display: block; }
 
         .about-copy h2 {
             font-size: 2.2rem;
@@ -734,11 +642,7 @@
             flex-shrink: 0;
         }
 
-        .contact-pills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
+        .contact-pills { display: flex; flex-wrap: wrap; gap: 10px; }
 
         .pill {
             display: inline-flex;
@@ -761,7 +665,7 @@
         }
 
         /* ============================================================
-           SERVIÇOS - MODO CLARO
+           SERVIÇOS
            ============================================================ */
         .services-grid {
             display: grid;
@@ -806,21 +710,11 @@
             color: white;
         }
 
-        .service-card h3 {
-            font-size: 1.15rem;
-            font-weight: 700;
-            color: var(--text);
-            margin-bottom: 8px;
-        }
-
-        .service-card p {
-            color: var(--text-light);
-            font-size: 0.9rem;
-            line-height: 1.7;
-        }
+        .service-card h3 { font-size: 1.15rem; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+        .service-card p { color: var(--text-light); font-size: 0.9rem; line-height: 1.7; }
 
         /* ============================================================
-           PROJETOS - MODO CLARO
+           PROJETOS
            ============================================================ */
         .projects-grid {
             display: grid;
@@ -852,33 +746,12 @@
             position: relative;
         }
 
-        .project-media img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.6s ease;
-        }
+        .project-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+        .project-card:hover .project-media img { transform: scale(1.05); }
 
-        .project-card:hover .project-media img {
-            transform: scale(1.05);
-        }
-
-        .project-content {
-            padding: 24px;
-        }
-
-        .project-content h3 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--text);
-            margin-bottom: 4px;
-        }
-
-        .project-content p {
-            color: var(--text-light);
-            font-size: 0.9rem;
-            margin-bottom: 10px;
-        }
+        .project-content { padding: 24px; }
+        .project-content h3 { font-size: 1.1rem; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+        .project-content p { color: var(--text-light); font-size: 0.9rem; margin-bottom: 10px; }
 
         .project-content .project-link {
             display: inline-flex;
@@ -891,17 +764,9 @@
             transition: all 0.3s ease;
         }
 
-        .project-content .project-link:hover {
-            color: var(--accent);
-            transform: translateX(4px);
-        }
+        .project-content .project-link:hover { color: var(--accent); transform: translateX(4px); }
 
-        .project-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin-top: 10px;
-        }
+        .project-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
 
         .project-tags span {
             background: rgba(15, 118, 110, 0.06);
@@ -914,7 +779,7 @@
         }
 
         /* ============================================================
-           CATÁLOGO - MODO CLARO
+           CATÁLOGO
            ============================================================ */
         .catalog-grid {
             display: grid;
@@ -932,42 +797,12 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
         }
 
-        .catalog-card:hover {
-            border-color: var(--primary);
-            box-shadow: var(--shadow-glow);
-        }
-
-        .catalog-card h3 {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--text);
-            margin-bottom: 8px;
-        }
-
-        .catalog-card p {
-            color: var(--text-light);
-            font-size: 0.95rem;
-            line-height: 1.7;
-        }
-
-        .catalog-card ul {
-            list-style: none;
-            display: grid;
-            gap: 10px;
-            margin-top: 16px;
-        }
-
-        .catalog-card ul li {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: var(--text-light);
-        }
-
-        .catalog-card ul li i {
-            color: var(--primary);
-            font-size: 14px;
-        }
+        .catalog-card:hover { border-color: var(--primary); box-shadow: var(--shadow-glow); }
+        .catalog-card h3 { font-size: 1.3rem; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+        .catalog-card p { color: var(--text-light); font-size: 0.95rem; line-height: 1.7; }
+        .catalog-card ul { list-style: none; display: grid; gap: 10px; margin-top: 16px; }
+        .catalog-card ul li { display: flex; align-items: center; gap: 10px; color: var(--text-light); }
+        .catalog-card ul li i { color: var(--primary); font-size: 14px; }
 
         .catalog-demo {
             background: linear-gradient(135deg, rgba(15, 118, 110, 0.04), rgba(124, 58, 237, 0.04));
@@ -978,34 +813,13 @@
             transition: all 0.4s ease;
         }
 
-        .catalog-demo:hover {
-            border-color: var(--primary);
-            box-shadow: var(--shadow-glow);
-        }
-
-        .catalog-demo h3 {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--text);
-            margin-bottom: 8px;
-        }
-
-        .catalog-demo p {
-            color: var(--text-light);
-            font-size: 0.95rem;
-            line-height: 1.7;
-            margin-bottom: 16px;
-        }
-
-        .catalog-demo .btn-group {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+        .catalog-demo:hover { border-color: var(--primary); box-shadow: var(--shadow-glow); }
+        .catalog-demo h3 { font-size: 1.3rem; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+        .catalog-demo p { color: var(--text-light); font-size: 0.95rem; line-height: 1.7; margin-bottom: 16px; }
+        .catalog-demo .btn-group { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
 
         /* ============================================================
-           CLÍNICAS - MODO CLARO
+           CLÍNICAS
            ============================================================ */
         .clinic-wrap {
             background: linear-gradient(135deg, rgba(15, 118, 110, 0.04), rgba(124, 58, 237, 0.04));
@@ -1017,17 +831,8 @@
             transition: all 0.4s ease;
         }
 
-        .clinic-wrap:hover {
-            border-color: var(--primary);
-            box-shadow: var(--shadow-glow);
-        }
-
-        .clinic-visual {
-            padding: 48px 40px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+        .clinic-wrap:hover { border-color: var(--primary); box-shadow: var(--shadow-glow); }
+        .clinic-visual { padding: 48px 40px; display: flex; flex-direction: column; justify-content: center; }
 
         .clinic-visual h3 {
             font-size: 1.8rem;
@@ -1043,12 +848,7 @@
             background-clip: text;
         }
 
-        .clinic-visual p {
-            color: var(--text-light);
-            font-size: 1.05rem;
-            margin-top: 8px;
-            line-height: 1.8;
-        }
+        .clinic-visual p { color: var(--text-light); font-size: 1.05rem; margin-top: 8px; line-height: 1.8; }
 
         .clinic-pricing {
             padding: 48px 40px;
@@ -1059,26 +859,12 @@
             border-left: 1px solid var(--border);
         }
 
-        .clinic-pricing h3 {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--text);
-        }
-
-        .clinic-pricing p {
-            color: var(--text-light);
-            margin-bottom: 8px;
-        }
-
-        .clinic-pricing .btn-group {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-            margin-top: 16px;
-        }
+        .clinic-pricing h3 { font-size: 1.3rem; font-weight: 700; color: var(--text); }
+        .clinic-pricing p { color: var(--text-light); margin-bottom: 8px; }
+        .clinic-pricing .btn-group { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
 
         /* ============================================================
-           DEPOIMENTOS - MODO CLARO
+           DEPOIMENTOS
            ============================================================ */
         .testimonials-grid {
             display: grid;
@@ -1101,32 +887,13 @@
             box-shadow: var(--shadow-glow);
         }
 
-        .testimonial-card .quote {
-            font-size: 2rem;
-            color: var(--primary);
-            opacity: 0.3;
-            margin-bottom: 8px;
-        }
-
-        .testimonial-card p {
-            color: var(--text-light);
-            font-style: italic;
-            line-height: 1.7;
-            margin-bottom: 12px;
-        }
-
-        .testimonial-card strong {
-            color: var(--text);
-            font-weight: 700;
-        }
-
-        .testimonial-card .role {
-            font-size: 0.8rem;
-            color: var(--text-light);
-        }
+        .testimonial-card .quote { font-size: 2rem; color: var(--primary); opacity: 0.3; margin-bottom: 8px; }
+        .testimonial-card p { color: var(--text-light); font-style: italic; line-height: 1.7; margin-bottom: 12px; }
+        .testimonial-card strong { color: var(--text); font-weight: 700; }
+        .testimonial-card .role { font-size: 0.8rem; color: var(--text-light); }
 
         /* ============================================================
-           CTA - MODO CLARO
+           CTA
            ============================================================ */
         .cta {
             background: linear-gradient(135deg, rgba(15, 118, 110, 0.04), rgba(124, 58, 237, 0.04));
@@ -1136,12 +903,7 @@
             text-align: center;
         }
 
-        .cta h2 {
-            font-size: 2.4rem;
-            font-weight: 800;
-            color: var(--text);
-            margin-bottom: 16px;
-        }
+        .cta h2 { font-size: 2.4rem; font-weight: 800; color: var(--text); margin-bottom: 16px; }
 
         .cta h2 span {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -1150,28 +912,13 @@
             background-clip: text;
         }
 
-        .cta p {
-            color: var(--text-light);
-            font-size: 1.1rem;
-            max-width: 560px;
-            margin: 0 auto 2rem;
-        }
-
-        .cta .btn-group {
-            display: flex;
-            gap: 14px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
+        .cta p { color: var(--text-light); font-size: 1.1rem; max-width: 560px; margin: 0 auto 2rem; }
+        .cta .btn-group { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
         /* ============================================================
-           FOOTER - MODO CLARO
+           FOOTER
            ============================================================ */
-        .footer {
-            background: white;
-            border-top: 1px solid var(--border);
-            padding: 48px 0 28px;
-        }
+        .footer { background: white; border-top: 1px solid var(--border); padding: 48px 0 28px; }
 
         .footer-top {
             display: grid;
@@ -1181,28 +928,17 @@
             border-bottom: 1px solid var(--border);
         }
 
-        .footer-brand h4 {
-            font-size: 1.2rem;
-            font-weight: 800;
-            color: var(--text);
-        }
+        .footer-brand h4 { font-size: 1.2rem; font-weight: 800; color: var(--text); }
+        .footer-brand p { color: var(--text-light); font-size: 0.9rem; margin-top: 8px; }
 
-        .footer-brand p {
-            color: var(--text-light);
-            font-size: 0.9rem;
-            margin-top: 8px;
-        }
-
-        .footer-links h4,
-        .footer-contact h4 {
+        .footer-links h4, .footer-contact h4 {
             font-size: 0.9rem;
             font-weight: 700;
             color: var(--text);
             margin-bottom: 16px;
         }
 
-        .footer-links a,
-        .footer-contact a {
+        .footer-links a, .footer-contact a {
             display: block;
             color: var(--text-light);
             text-decoration: none;
@@ -1211,29 +947,11 @@
             transition: color 0.3s ease;
         }
 
-        .footer-links a:hover,
-        .footer-contact a:hover {
-            color: var(--primary);
-        }
+        .footer-links a:hover, .footer-contact a:hover { color: var(--primary); }
+        .footer-contact a i { width: 24px; margin-right: 8px; }
 
-        .footer-contact a i {
-            width: 24px;
-            margin-right: 8px;
-        }
-
-        .footer-bottom {
-            text-align: center;
-            padding-top: 28px;
-            color: var(--text-light);
-            font-size: 0.85rem;
-        }
-
-        .footer-social {
-            display: flex;
-            gap: 12px;
-            justify-content: center;
-            margin-bottom: 16px;
-        }
+        .footer-bottom { text-align: center; padding-top: 28px; color: var(--text-light); font-size: 0.85rem; }
+        .footer-social { display: flex; gap: 12px; justify-content: center; margin-bottom: 16px; }
 
         .footer-social a {
             width: 44px;
@@ -1248,11 +966,7 @@
             transition: all 0.3s ease;
         }
 
-        .footer-social a:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-            transform: translateY(-4px);
-        }
+        .footer-social a:hover { border-color: var(--primary); color: var(--primary); transform: translateY(-4px); }
 
         /* ============================================================
            WHATSAPP FLOAT
@@ -1276,9 +990,7 @@
             animation: glowPulse 3s ease-in-out infinite;
         }
 
-        .whatsapp-float:hover {
-            transform: scale(1.1) translateY(-4px);
-        }
+        .whatsapp-float:hover { transform: scale(1.1) translateY(-4px); }
 
         /* ============================================================
            BOTÃO FORMULÁRIO FLOAT
@@ -1302,9 +1014,7 @@
             transition: all 0.3s ease;
         }
 
-        .form-float:hover {
-            transform: scale(1.1) translateY(-4px);
-        }
+        .form-float:hover { transform: scale(1.1) translateY(-4px); }
 
         /* ============================================================
            MODAL FORM
@@ -1323,9 +1033,7 @@
             z-index: 2000;
         }
 
-        .modal-form.active {
-            display: flex;
-        }
+        .modal-form.active { display: flex; }
 
         .modal-form-content {
             background: white;
@@ -1340,17 +1048,8 @@
             box-shadow: 0 32px 80px rgba(0, 0, 0, 0.2);
         }
 
-        .modal-form-content h2 {
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: var(--text);
-            margin-bottom: 8px;
-        }
-
-        .modal-form-content p {
-            color: var(--text-light);
-            margin-bottom: 24px;
-        }
+        .modal-form-content h2 { font-size: 1.8rem; font-weight: 800; color: var(--text); margin-bottom: 8px; }
+        .modal-form-content p { color: var(--text-light); margin-bottom: 24px; }
 
         .close-modal {
             position: absolute;
@@ -1364,13 +1063,9 @@
             transition: color 0.3s ease;
         }
 
-        .close-modal:hover {
-            color: var(--text);
-        }
+        .close-modal:hover { color: var(--text); }
 
-        .form-group {
-            margin-bottom: 18px;
-        }
+        .form-group { margin-bottom: 18px; }
 
         .form-group label {
             display: block;
@@ -1403,20 +1098,9 @@
         }
 
         .form-group input::placeholder,
-        .form-group textarea::placeholder {
-            color: var(--text-light);
-            opacity: 0.5;
-        }
-
-        .form-group select option {
-            background: white;
-            color: var(--text);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 80px;
-        }
+        .form-group textarea::placeholder { color: var(--text-light); opacity: 0.5; }
+        .form-group select option { background: white; color: var(--text); }
+        .form-group textarea { resize: vertical; min-height: 80px; }
 
         .btn-submit {
             width: 100%;
@@ -1431,153 +1115,89 @@
             transition: all 0.3s ease;
         }
 
-        .btn-submit:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 32px rgba(15, 118, 110, 0.2);
-        }
+        .btn-submit:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(15, 118, 110, 0.2); }
 
         /* ============================================================
            RESPONSIVO
            ============================================================ */
         @media (max-width: 1100px) {
-            .hero-grid,
-            .about-grid,
-            .catalog-grid,
-            .clinic-wrap {
-                grid-template-columns: 1fr;
-            }
-            .services-grid,
-            .projects-grid,
-            .testimonials-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .trust-box {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .footer-top {
-                grid-template-columns: 1fr 1fr;
-            }
-            .clinic-pricing {
-                border-left: none;
-                border-top: 1px solid var(--border);
-            }
+            .hero-grid, .about-grid, .catalog-grid, .clinic-wrap { grid-template-columns: 1fr; }
+            .services-grid, .projects-grid, .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+            .trust-box { grid-template-columns: repeat(2, 1fr); }
+            .footer-top { grid-template-columns: 1fr 1fr; }
+            .clinic-pricing { border-left: none; border-top: 1px solid var(--border); }
         }
 
         @media (max-width: 860px) {
-            .nav-links,
-            .nav-actions .desktop-only {
-                display: none;
-            }
-            .menu-toggle {
-                display: grid;
-                place-items: center;
-            }
-            .hero-avatar {
-                width: 240px;
-                height: 240px;
-            }
-            .hero-stats {
-                gap: 1.5rem;
-            }
-            .hero-stats .stat h3 {
-                font-size: 1.6rem;
-            }
+            .nav-links, .nav-actions .desktop-only { display: none; }
+            .menu-toggle { display: grid; place-items: center; }
+            .hero-avatar { width: 240px; height: 240px; }
+            .hero-stats { gap: 1.5rem; }
+            .hero-stats .stat h3 { font-size: 1.6rem; }
         }
 
         @media (max-width: 640px) {
-            .services-grid,
-            .projects-grid,
-            .testimonials-grid {
-                grid-template-columns: 1fr;
-            }
-            .trust-box {
-                grid-template-columns: 1fr;
-            }
-            .footer-top {
-                grid-template-columns: 1fr;
-            }
-            .hero-avatar {
-                width: 200px;
-                height: 200px;
-            }
-            .hero-content h1 {
-                font-size: 2.2rem;
-            }
-            .section {
-                padding: 60px 0;
-            }
-            .hero {
-                padding: 50px 0 40px;
-            }
-            .clinic-visual,
-            .clinic-pricing {
-                padding: 28px 24px;
-            }
-            .modal-form-content {
-                padding: 28px 20px;
-            }
-            .trust-box {
-                padding: 18px 20px;
-            }
-            .catalog-demo {
-                padding: 24px 20px;
-            }
+            .services-grid, .projects-grid, .testimonials-grid { grid-template-columns: 1fr; }
+            .trust-box { grid-template-columns: 1fr; }
+            .footer-top { grid-template-columns: 1fr; }
+            .hero-avatar { width: 200px; height: 200px; }
+            .hero-content h1 { font-size: 2.2rem; }
+            .section { padding: 60px 0; }
+            .hero { padding: 50px 0 40px; }
+            .clinic-visual, .clinic-pricing { padding: 28px 24px; }
+            .modal-form-content { padding: 28px 20px; }
+            .trust-box { padding: 18px 20px; }
+            .catalog-demo { padding: 24px 20px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- ============================================================
-    PARTICLES CANVAS - EFEITO BOLINHAS FLUTUANTES
-    ============================================================ -->
+    <!-- PARTICLES CANVAS -->
     <canvas id="particles-canvas"></canvas>
 
-   <!-- ============================================================
-HEADER
-============================================================ -->
-<header class="navbar" id="navbar">
-    <div class="container">
-        <div class="nav-wrap">
-            <a href="#" class="brand">
-                <div class="brand-mark">
-                    <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/logo.jpeg" alt="DataDesh Soluções Logo">
+    <!-- HEADER -->
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrap">
+                <a href="#" class="brand">
+                    <div class="brand-mark">
+                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/logo.jpeg" alt="DataDesh Soluções Logo">
+                    </div>
+                    <div class="brand-text">
+                        <strong>DataDesh Soluções</strong>
+                        <span>Digitais</span>
+                    </div>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#catalogos">Catálogos</a></li>
+                    <li><a href="#clinicas">Clínicas</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a class="nav-icon-link desktop-only" href="https://www.instagram.com/datadeshsolucoesdigitais/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-catalogo desktop-only" href="https://datadeshsolucoes-design.github.io/catalago-sem-precos-DataDesh/" target="_blank"><i class="fa-solid fa-book"></i> Catálogo de Serviços</a>
+                    <a class="btn btn-primary desktop-only btn-glow" href="https://wa.me/5531984987116" target="_blank"><i class="fab fa-whatsapp"></i> Fale comigo</a>
+                    <button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
                 </div>
-                <div class="brand-text">
-                    <strong>DataDesh Soluções</strong>
-                    <span>Digitais</span>
-                </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#catalogos">Catálogos</a></li>
-                <li><a href="#clinicas">Clínicas</a></li>
-                <li><a href="#depoimentos">Depoimentos</a></li>
-            </ul>
-            <div class="nav-actions">
-                <a class="nav-icon-link desktop-only" href="https://www.instagram.com/datadeshsolucoesdigitais/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a class="btn btn-catalogo desktop-only" href="https://datadeshsolucoes-design.github.io/catalago-sem-precos-DataDesh/" target="_blank"><i class="fa-solid fa-book"></i> Catálogo de Serviços DataDesh</a>
-                <a class="btn btn-primary desktop-only btn-glow" href="https://wa.me/5531984987116" target="_blank"><i class="fab fa-whatsapp"></i> Fale comigo</a>
-                <button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="nav-mobile" id="mobileMenu">
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#catalogos">Catálogos</a>
+                <a href="#clinicas">Clínicas</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="https://datadeshsolucoes-design.github.io/catalago-sem-precos-DataDesh/" target="_blank" style="border-color: var(--secondary); color: var(--secondary);"><i class="fa-solid fa-book"></i> Catálogo</a>
+                <a href="https://wa.me/5531984987116" target="_blank" style="border-color: var(--primary); color: var(--primary);">Falar no WhatsApp</a>
             </div>
         </div>
-        <div class="nav-mobile" id="mobileMenu">
-            <a href="#sobre">Sobre</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#catalogos">Catálogos</a>
-            <a href="#clinicas">Clínicas</a>
-            <a href="#depoimentos">Depoimentos</a>
-            <a href="https://datadeshsolucoes-design.github.io/catalago-sem-precos-DataDesh/" target="_blank" style="border-color: var(--secondary); color: var(--secondary);"><i class="fa-solid fa-book"></i> Catálogo</a>
-            <a href="https://wa.me/5531984987116" target="_blank" style="border-color: var(--primary); color: var(--primary);">Falar no WhatsApp</a>
-        </div>
-    </div>
-</header>
+    </header>
     
-    <!-- ============================================================
-    HERO
-    ============================================================ -->
+    <!-- HERO -->
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-grid">
@@ -1627,9 +1247,7 @@ HEADER
         </div>
     </section>
 
-    <!-- ============================================================
-    TRUST BAR
-    ============================================================ -->
+    <!-- TRUST BAR -->
     <div class="trust-bar">
         <div class="container">
             <div class="trust-box reveal">
@@ -1653,9 +1271,7 @@ HEADER
         </div>
     </div>
 
-    <!-- ============================================================
-    SOBRE
-    ============================================================ -->
+    <!-- SOBRE -->
     <section class="section" id="sobre">
         <div class="container">
             <div class="about-grid">
@@ -1685,9 +1301,7 @@ HEADER
         </div>
     </section>
 
-    <!-- ============================================================
-    SERVIÇOS
-    ============================================================ -->
+    <!-- SERVIÇOS -->
     <section class="section section-alt" id="servicos">
         <div class="container">
             <div class="section-header reveal">
@@ -1748,9 +1362,7 @@ HEADER
         </div>
     </section>
 
-    <!-- ============================================================
-    PROJETOS (COM IMAGENS)
-    ============================================================ -->
+    <!-- PROJETOS ATUALIZADOS -->
     <section class="section" id="projetos">
         <div class="container">
             <div class="section-header reveal">
@@ -1760,98 +1372,98 @@ HEADER
             </div>
 
             <div class="projects-grid">
-                <!-- Portfólio -->
+                <!-- Site Simples (Clínica) -->
                 <div class="project-card reveal-tilt">
                     <div class="project-media">
-                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/portifolio.png" alt="Portfólio Profissional">
+                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/site%20modernos.png" alt="Site Simples para Clínica">
                     </div>
                     <div class="project-content">
-                        <h3>Portfólio Profissional</h3>
-                        <p>Página completa para apresentação de projetos e habilidades.</p>
-                        <a href="https://anadesenvolvedora.github.io/portifolio/#sobre" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        <h3>Site Simples para Clínica</h3>
+                        <p>Site institucional elegante com agendamento direto via WhatsApp.</p>
+                        <a href="https://anadesenvolvedora.github.io/prototipositeclinica/#contato" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
                         <div class="project-tags">
                             <span>HTML/CSS</span>
-                            <span>JavaScript</span>
+                            <span>Clínica</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Currículo -->
-                <div class="project-card reveal-tilt">
-                    <div class="project-media">
-                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/curriculo.png" alt="Currículo Interativo">
-                    </div>
-                    <div class="project-content">
-                        <h3>Currículo Interativo</h3>
-                        <p>Currículo profissional com layout moderno e animações.</p>
-                        <a href="https://anadesenvolvedora.github.io/curriculo/" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
-                        <div class="project-tags">
-                            <span>HTML/CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                </div>
+                <!-- Cardápio Virtual -->
+<div class="project-card reveal-tilt">
+    <div class="project-media">
+        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/pizzaria.png" alt="Cardápio Virtual Inteligente">
+    </div>
+    <div class="project-content">
+        <h3>Cardápio Virtual Inteligente</h3>
+        <p>Cardápio interativo com carrinho e pedido automático via WhatsApp.</p>
+        <a href="https://anadesenvolvedora.github.io/Bellas-Pizzaria/#home" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+        <div class="project-tags">
+            <span>JavaScript</span>
+            <span>Cardápio</span>
+        </div>
+    </div>
+</div>
 
-                <!-- Painel no Google Sheets -->
-                <div class="project-card reveal-tilt">
-                    <div class="project-media">
-                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/Googleshetes.png" alt="Painel no Google Sheets">
-                    </div>
-                    <div class="project-content">
-                        <h3>Painel no Google Sheets</h3>
-                        <p>Consolidado de dados com gráficos e filtros dinâmicos.</p>
-                        <a href="https://docs.google.com/spreadsheets/d/1JcUzW28VGqYHqSBamvDj_-OeTWKDxKsiL9UBX17ejnk/edit?gid=123637652#gid=123637652" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
-                        <div class="project-tags">
-                            <span>Google Sheets</span>
-                            <span>Dashboards</span>
-                        </div>
-                    </div>
-                </div>
+<!-- Convite Digital -->
+<div class="project-card reveal-tilt">
+    <div class="project-media">
+        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/convite.png" alt="Convite Especial para Eventos">
+    </div>
+    <div class="project-content">
+        <h3>Convite Especial para Eventos</h3>
+        <p>Convite digital com contagem regressiva e confirmação de presença.</p>
+        <a href="https://anadesenvolvedora.github.io/Convite-Digital/#detalhes" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+        <div class="project-tags">
+            <span>Evento</span>
+            <span>Interativo</span>
+        </div>
+    </div>
+</div>
 
-                <!-- Dashboard OCI -->
-                <div class="project-card reveal-tilt">
-                    <div class="project-media">
-                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/deshbord.png" alt="Dashboard OCI">
-                    </div>
-                    <div class="project-content">
-                        <h3>Dashboard OCI</h3>
-                        <p>Painel interativo com gráficos e filtros para análise de dados.</p>
-                        <a href="https://datadeshsolucoes-design.github.io/Painel-OCI/" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
-                        <div class="project-tags">
-                            <span>Chart.js</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                </div>
+<!-- Lista Churrasco -->
+<div class="project-card reveal-tilt">
+    <div class="project-media">
+        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/lista%20para%20churrasco.png" alt="Lista Churrasco da Família">
+    </div>
+    <div class="project-content">
+        <h3>Lista Churrasco da Família</h3>
+        <p>Organizador colaborativo onde cada um escolhe o que trazer.</p>
+        <a href="https://anadesenvolvedora.github.io/Organizador-de-Festas-e-Eventos/#confirmar" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+        <div class="project-tags">
+            <span>Colaborativo</span>
+            <span>Lista</span>
+        </div>
+    </div>
+</div>
+
+<!-- Lista de Presentes -->
+<div class="project-card reveal-tilt">
+    <div class="project-media">
+        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/lista%20de%20presentes.png" alt="Lista de Presentes Virtual">
+    </div>
+    <div class="project-content">
+        <h3>Lista de Presentes Virtual</h3>
+        <p>Lista inteligente com cotas coletivas — ninguém dá presente repetido.</p>
+        <a href="https://anadesenvolvedora.github.io/Lista-de-Presentes/#contato" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+        <div class="project-tags">
+            <span>Lista</span>
+            <span>Interativo</span>
+        </div>
+    </div>
+</div>
 
                 <!-- Organização de Links -->
                 <div class="project-card reveal-tilt">
                     <div class="project-media">
-                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/pagina%20de%20links.png" alt="Página de Links">
+                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/pagina%20de%20links.png" alt="Organização de Links">
                     </div>
                     <div class="project-content">
-                        <h3>Página de Links</h3>
-                        <p>Organização de links importantes em uma página interativa.</p>
-                        <a href="https://regulacaoconsolidados-dot.github.io/linksteleconsulta/?utm_source=chatgpt.com" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        <h3>Organização de Links</h3>
+                        <p>Central de ferramentas e links essenciais, tudo organizado em um só lugar.</p>
+                        <a href="https://anadesenvolvedora.github.io/controledeferramentassaude/" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
                         <div class="project-tags">
                             <span>HTML/CSS</span>
                             <span>Links</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contatos Telefônicos -->
-                <div class="project-card reveal-tilt">
-                    <div class="project-media">
-                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/organiza%C3%A7%C3%A3o%20de%20contatos%20telefonicos.png" alt="Organização de Contatos">
-                    </div>
-                    <div class="project-content">
-                        <h3>Organização de Contatos</h3>
-                        <p>Página interativa para listar contatos telefônicos organizados.</p>
-                        <a href="https://regulacaoconsolidados-dot.github.io/contatosdasubs/" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
-                        <div class="project-tags">
-                            <span>HTML/CSS</span>
-                            <span>JavaScript</span>
                         </div>
                     </div>
                 </div>
@@ -1872,34 +1484,114 @@ HEADER
                     </div>
                 </div>
 
-                <!-- Resumo dos Fluxos -->
+                <!-- Painel Executivo OCI -->
                 <div class="project-card reveal-tilt">
                     <div class="project-media">
-                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/resumo%20dos%20fluxos.png" alt="Resumo dos Fluxos - Regulação">
+                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/deshbord.png" alt="Painel Executivo OCI">
                     </div>
                     <div class="project-content">
-                        <h3>Resumo dos Fluxos</h3>
-                        <p>Página para acompanhamento e resumo dos fluxos de regulação.</p>
-                        <a href="https://anadesenvolvedora.github.io/saudepaginafluxodaregula-o/" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        <h3>Painel Executivo OCI</h3>
+                        <p>Painel consolidado com visão executiva dos indicadores OCI.</p>
+                        <a href="https://anadesenvolvedora.github.io/ociconsolidado/" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
                         <div class="project-tags">
-                            <span>HTML/CSS</span>
+                            <span>Chart.js</span>
                             <span>Dashboard</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Sites Modernos / Clínicas -->
+                <!-- Lista Telefônica -->
                 <div class="project-card reveal-tilt">
                     <div class="project-media">
-                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/site%20modernos.png" alt="Site Moderno para Clínicas">
+                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/organiza%C3%A7%C3%A3o%20de%20contatos%20telefonicos.png" alt="Lista Telefônica Virtual">
                     </div>
                     <div class="project-content">
-                        <h3>Site Moderno para Clínicas</h3>
-                        <p>Layout contemporâneo e responsivo para clínicas e consultórios.</p>
-                        <a href="https://anadesenvolvedora.github.io/prototipositeclinica/#depoimentos" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        <h3>Lista Telefônica Virtual</h3>
+                        <p>Agenda telefônica completa da rede de saúde, com busca rápida.</p>
+                        <a href="https://anadesenvolvedora.github.io/saudecontatosubs/" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
                         <div class="project-tags">
+                            <span>Contatos</span>
+                            <span>Busca</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resumo de Documentos -->
+                <div class="project-card reveal-tilt">
+                    <div class="project-media">
+                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/resumo%20dos%20fluxos.png" alt="Resumo de Documentos - Regulação">
+                    </div>
+                    <div class="project-content">
+                        <h3>Resumo de Documentos</h3>
+                        <p>Página com fluxo da regulação em saúde — toda a informação centralizada.</p>
+                        <a href="https://anadesenvolvedora.github.io/saudepaginafluxodaregula-o/" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="project-tags">
+                            <span>Documentos</span>
+                            <span>Dashboard</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfólio Virtual -->
+                <div class="project-card reveal-tilt">
+                    <div class="project-media">
+                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/portifolio.png" alt="Portfólio Virtual">
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfólio Virtual</h3>
+                        <p>Vitrine completa com todos os serviços da DataDesh Soluções Digitais.</p>
+                        <a href="https://portifolio.datadeshsolucoes.workers.dev/" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="project-tags">
+                            <span>Portfólio</span>
                             <span>HTML/CSS</span>
-                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Currículo Virtual -->
+                <div class="project-card reveal-tilt">
+                    <div class="project-media">
+                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/curriculo.png" alt="Currículo Virtual">
+                    </div>
+                    <div class="project-content">
+                        <h3>Currículo Virtual</h3>
+                        <p>Currículo digital moderno e interativo da Ana Desenvolvedora.</p>
+                        <a href="https://curriculo.datadeshsolucoes.workers.dev/" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="project-tags">
+                            <span>Currículo</span>
+                            <span>Interativo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ferramenta OCI (Sistema) -->
+                <div class="project-card reveal-tilt">
+                    <div class="project-media">
+                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/deshbord.png" alt="Ferramenta Inteligente de Análise">
+                    </div>
+                    <div class="project-content">
+                        <h3>Ferramenta Inteligente de Análise</h3>
+                        <p>Sistema completo com login, senha, dashboards e lógica personalizada.</p>
+                        <a href="https://anadesenvolvedora.github.io/Ferramenta-OCI/" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="project-tags">
+                            <span>Login</span>
+                            <span>Sistema</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Painel Automatizado em Planilhas -->
+                <div class="project-card reveal-tilt">
+                    <div class="project-media">
+                        <img src="https://raw.githubusercontent.com/datadeshsolucoes-design/Servicos-digitais/main/Googleshetes.png" alt="Painel Automatizado em Planilhas">
+                    </div>
+                    <div class="project-content">
+                        <h3>Painel Automatizado em Planilhas</h3>
+                        <p>Automação completa no Google Sheets com fórmulas, scripts e dashboards.</p>
+                        <a href="https://docs.google.com/spreadsheets/d/12LOIIdR6bSkS1vV2o6984K1UvUsMGrHIg6z0xcSCpAs/edit?gid=1423732641#gid=1423732641" target="_blank" class="project-link">Ver projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="project-tags">
+                            <span>Google Sheets</span>
+                            <span>Automação</span>
                         </div>
                     </div>
                 </div>
@@ -1907,9 +1599,7 @@ HEADER
         </div>
     </section>
 
-    <!-- ============================================================
-    CATÁLOGO
-    ============================================================ -->
+    <!-- CATÁLOGO -->
     <section class="section section-alt" id="catalogos">
         <div class="container">
             <div class="section-header reveal">
@@ -1940,7 +1630,6 @@ HEADER
                 </div>
             </div>
 
-            <!-- NOVA SEÇÃO: CATÁLOGO COMPLETO COMO EXEMPLO -->
             <div style="margin-top: 48px;">
                 <div class="catalog-demo reveal-tilt">
                     <div class="section-kicker" style="margin: 0 auto 12px; display: inline-flex;">
@@ -1961,9 +1650,7 @@ HEADER
         </div>
     </section>
 
-    <!-- ============================================================
-    CLÍNICAS
-    ============================================================ -->
+    <!-- CLÍNICAS -->
     <section class="section" id="clinicas">
         <div class="container">
             <div class="clinic-wrap reveal-tilt">
@@ -1991,9 +1678,7 @@ HEADER
         </div>
     </section>
 
-    <!-- ============================================================
-    DEPOIMENTOS
-    ============================================================ -->
+    <!-- DEPOIMENTOS -->
     <section class="section section-alt" id="depoimentos">
         <div class="container">
             <div class="section-header reveal">
@@ -2026,9 +1711,7 @@ HEADER
         </div>
     </section>
 
-    <!-- ============================================================
-    CTA
-    ============================================================ -->
+    <!-- CTA -->
     <section class="cta">
         <div class="container">
             <h2>Pronto para dar um <span>upgrade digital</span> no seu negócio?</h2>
@@ -2041,9 +1724,7 @@ HEADER
         </div>
     </section>
 
-    <!-- ============================================================
-    FOOTER
-    ============================================================ -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer-top">
@@ -2082,19 +1763,13 @@ HEADER
         </div>
     </footer>
 
-    <!-- ============================================================
-    WHATSAPP FLOAT
-    ============================================================ -->
+    <!-- WHATSAPP FLOAT -->
     <a href="https://wa.me/5531984987116" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
 
-    <!-- ============================================================
-    FORM FLOAT
-    ============================================================ -->
+    <!-- FORM FLOAT -->
     <button class="form-float" id="openFormBtn"><i class="fa-regular fa-message"></i></button>
 
-    <!-- ============================================================
-    FORM MODAL
-    ============================================================ -->
+    <!-- FORM MODAL -->
     <div class="modal-form" id="formModal">
         <div class="modal-form-content">
             <button class="close-modal" id="closeModalBtn">&times;</button>
@@ -2138,18 +1813,13 @@ HEADER
         </div>
     </div>
 
-    <!-- ============================================================
-    SCRIPTS
-    ============================================================ -->
+    <!-- SCRIPTS -->
     <script>
-        // ============================================================
-        // PARTICLES - EFEITO BOLINHAS FLUTUANTES (MODO CLARO)
-        // ============================================================
+        // PARTICLES
         const canvas = document.getElementById('particles-canvas');
         const ctx = canvas.getContext('2d');
         let particles = [];
         let mouse = { x: null, y: null };
-        let animId = null;
 
         function resizeCanvas() {
             canvas.width = window.innerWidth;
@@ -2158,15 +1828,8 @@ HEADER
         resizeCanvas();
         window.addEventListener('resize', resizeCanvas);
 
-        window.addEventListener('mousemove', (e) => {
-            mouse.x = e.clientX;
-            mouse.y = e.clientY;
-        });
-
-        window.addEventListener('mouseleave', () => {
-            mouse.x = null;
-            mouse.y = null;
-        });
+        window.addEventListener('mousemove', (e) => { mouse.x = e.clientX; mouse.y = e.clientY; });
+        window.addEventListener('mouseleave', () => { mouse.x = null; mouse.y = null; });
 
         class Particle {
             constructor() {
@@ -2176,13 +1839,7 @@ HEADER
                 this.baseSize = this.size;
                 this.speedX = (Math.random() - 0.5) * 0.6;
                 this.speedY = (Math.random() - 0.5) * 0.6;
-                const colors = [
-                    '15, 118, 110',
-                    '124, 58, 237',
-                    '245, 158, 11',
-                    '14, 165, 233',
-                    '236, 72, 153',
-                ];
+                const colors = ['15, 118, 110', '124, 58, 237', '245, 158, 11', '14, 165, 233', '236, 72, 153'];
                 this.color = colors[Math.floor(Math.random() * colors.length)];
                 this.opacity = Math.random() * 0.3 + 0.15;
                 this.pulseSpeed = Math.random() * 0.02 + 0.01;
@@ -2241,9 +1898,7 @@ HEADER
 
         function initParticles(count = 70) {
             particles = [];
-            for (let i = 0; i < count; i++) {
-                particles.push(new Particle());
-            }
+            for (let i = 0; i < count; i++) particles.push(new Particle());
         }
         initParticles();
 
@@ -2270,79 +1925,49 @@ HEADER
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             connectParticles();
             particles.forEach(p => { p.update(); p.draw(); });
-            animId = requestAnimationFrame(animateParticles);
+            requestAnimationFrame(animateParticles);
         }
         animateParticles();
 
-        // ============================================================
         // REVEAL ON SCROLL
-        // ============================================================
         const reveals = document.querySelectorAll('.reveal, .reveal-tilt');
 
         function checkReveals() {
             reveals.forEach(el => {
                 const rect = el.getBoundingClientRect();
-                if (rect.top < window.innerHeight - 80) {
-                    el.classList.add('active');
-                }
+                if (rect.top < window.innerHeight - 80) el.classList.add('active');
             });
         }
 
         window.addEventListener('scroll', checkReveals);
         window.addEventListener('load', checkReveals);
 
-        // ============================================================
         // NAVBAR SCROLL
-        // ============================================================
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 60) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
+            if (window.scrollY > 60) navbar.classList.add('scrolled');
+            else navbar.classList.remove('scrolled');
         });
 
-        // ============================================================
         // MENU MOBILE
-        // ============================================================
         const menuToggle = document.getElementById('menuToggle');
         const mobileMenu = document.getElementById('mobileMenu');
 
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
-        });
-
+        menuToggle.addEventListener('click', () => mobileMenu.classList.toggle('active'));
         mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('active');
-            });
+            link.addEventListener('click', () => mobileMenu.classList.remove('active'));
         });
 
-        // ============================================================
         // FORM MODAL
-        // ============================================================
         const openFormBtn = document.getElementById('openFormBtn');
         const formModal = document.getElementById('formModal');
         const closeModalBtn = document.getElementById('closeModalBtn');
 
-        openFormBtn.addEventListener('click', () => {
-            formModal.classList.add('active');
-        });
+        openFormBtn.addEventListener('click', () => formModal.classList.add('active'));
+        closeModalBtn.addEventListener('click', () => formModal.classList.remove('active'));
+        formModal.addEventListener('click', (e) => { if (e.target === formModal) formModal.classList.remove('active'); });
 
-        closeModalBtn.addEventListener('click', () => {
-            formModal.classList.remove('active');
-        });
-
-        formModal.addEventListener('click', (e) => {
-            if (e.target === formModal) {
-                formModal.classList.remove('active');
-            }
-        });
-
-        // ============================================================
         // FORM ENVIO VIA WHATSAPP
-        // ============================================================
         const leadForm = document.getElementById('leadForm');
         const NUMERO_WPP = "5531984987116";
 
